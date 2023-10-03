@@ -32,67 +32,7 @@ const Homesection = ({ blackbackground }) => {
         
     }, [currentIndex]);
 
-    //     setInterval(() => {
-    //         if(i < text.length){
-    //             settextcontent((prevcontent)=>{
-    //                 return prevcontent + text.charAt(i)
-    //                 i++;
-    //             })
-    //         }
-
-    //     }, 75);
-
-    // }, [i])
-
-    // useEffect(()=>{
-    //     let intervalId = setInterval(() => {
-    //         settextcontent((prevtext)=>{
-    //             if(i > text.length){
-    //                 clearInterval(intervalId)
-    //                 return prevtext
-    //                 i++;
-    //             }
-    //             prevtext + text.charAt(i)
-
-
-    //         }) 
-    //     }, 75);
-    // },[i,textContent])
-
-    // useEffect(() => {
-    //     const intervalId = setInterval(() => {
-    //         if (i <= text.length) {
-    //             setTextcontent((prevText) => prevText + text.charAt(i));
-    //             i++;
-    //         } else {
-    //             clearInterval(intervalId);
-    //         }
-    //     }, 100);
-
-    //     return () => {
-    //         clearInterval(intervalId);
-    //     };
-    // }, []);
-
-    // const [textContent, setTextContent] = useState('');
-    // let i = 0;
-
-    // useEffect(() => {
-    //     const typeNextCharacter = () => {
-    //         if (i < text.length) {
-    //             setTextContent((prevText) => prevText + text.charAt(i));
-    //             i++;
-    //             setTimeout(typeNextCharacter, 75);
-    //         }
-    //     };
-
-    //     typeNextCharacter();
-
-    //     return () => {
-    //         clearTimeout(typeNextCharacter);
-    //     };
-    // }, [text]);
-
+   
 
 
 
