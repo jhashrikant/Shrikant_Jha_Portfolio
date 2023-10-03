@@ -1,0 +1,60 @@
+/* .Home{
+    color: blue;
+} */
+
+.home{
+    margin-top: 80px;
+}
+
+.about__me {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+
+
+.profileImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+@media only screen and (max-width: 992px){
+    .about__me{
+        /* flex-direction: column-reverse; */
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .profileImg{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        /* object-position: center;
+        object-fit: contain; */
+    }
+
+}
+
+@media only screen and (max-width : 768px) {
+
+    .about__me{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .profileImg{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+
+    }
+    
+}
