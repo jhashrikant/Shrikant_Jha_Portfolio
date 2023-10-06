@@ -15,14 +15,15 @@
 }
 
 
-.navbar_links{
+/* .navbar_links{
 
-}
+} */
 
 .list_items{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
 .toggle_button{

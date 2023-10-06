@@ -10,9 +10,6 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 
 const Header = () => {
-
-    const hamburgerRef = useRef();
-
     const navbarRef = useRef();
 
 
@@ -49,7 +46,7 @@ const Header = () => {
         console.log(idtoscroll)
         const targetelement = document.querySelector(idtoscroll);
         if (targetelement) {
-            targetelement.scrollIntoView({ behavior: 'smooth' });
+            targetelement.scrollIntoView({ behavior: 'smooth',block: 'start' });
             navbarRef.current.classList.toggle(`${styles.active}`)
         }
     }
@@ -76,7 +73,7 @@ const Header = () => {
                     <nav className={styles.navbar}>
                         <div className={styles.brand_title}>SHRIKANT JHA</div>
 
-                        <GiHamburgerMenu onClick={() => OpenHamburgerMenu()} ref={hamburgerRef} className={styles.toggle_button} />
+                        <GiHamburgerMenu onClick={() => OpenHamburgerMenu()} className={styles.toggle_button} />
 
                         {/* navlinks */}
                         <div ref={navbarRef} className={styles.navbar_links}>
@@ -84,7 +81,7 @@ const Header = () => {
                                 {
                                     NAV_LINKS.map((navlink ,index)=>{
                                         return (
-                                            <li onClick={()=> ScrollToSection(`#${navlink.id}`)} key={index} className={`cursor-pointer font-semibold ${styles.navItems}`}>{navlink.Label}</li>
+                                            <li onClick={()=> ScrollToSection(`#${navlink.id}`)} key={index} className={`cursor-pointer font-sans ${styles.navItems}`}>{navlink.Label}</li>
                                         )
                                     })
                                 }
