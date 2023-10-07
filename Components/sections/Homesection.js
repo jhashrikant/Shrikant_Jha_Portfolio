@@ -43,7 +43,7 @@ const Homesection = ({ blackbackground }) => {
                     <Container>
                         <Row className={styles.about__me}>
                             <Col lg="6" md="6" className="mb-5">
-                                <h1>Hi , my name is Shrikant Jha ,</h1>
+                                <h1>Hi ,my name is Shrikant Jha,</h1>
                                 <h3>{displayText}</h3>
                                 <p>Hi my name is Shrikant Jha , Im a Frontend developer
                                     at Infosys <br />I do all things Coding<br />
@@ -51,7 +51,7 @@ const Homesection = ({ blackbackground }) => {
                                 </p>
 
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                                    <Button onClick={() => window.open('https://drive.google.com/file/d/1dw_dKAQCOTqSXTdmMuNg1fzdpZUxRy_y/view?usp=sharing', '_blank')} variant="secondary">Resume</Button>
+                                    <Button onClick={() => window.open('https://drive.google.com/file/d/1dw_dKAQCOTqSXTdmMuNg1fzdpZUxRy_y/view?usp=sharing', '_blank')} variant={styles.resume_color}>Resume</Button>
                                     {
                                         socialLinks.map((socialLink, index) => {
                                             return <button key={index} onClick={() => window.open(socialLink.Link, '_blank')} style={{ margin: '0 15px' }} title={socialLink.Title}>{socialLink.Icon}</button>

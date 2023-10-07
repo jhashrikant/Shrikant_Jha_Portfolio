@@ -81,12 +81,12 @@ const Header = () => {
                                 {
                                     NAV_LINKS.map((navlink, index) => {
                                         return (
-                                            <li onClick={() => ScrollToSection(`#${navlink.id}`)} key={index} className={`cursor-pointer font-sans ${styles.navItems}`}>{navlink.Label}</li>
+                                            <li onClick={() => ScrollToSection(`#${navlink.id}`)} key={index} className={`${styles.cursor-pointer} font-sans ${styles.navItems}`}>{navlink.Label}</li>
                                         )
                                     })
                                 }
-                                {/* <Button className={`${styles.switchBtn}`} onClick={() => ChangeBackground()} variant={blackbackground ? 'light' : 'dark'}>{blackbackground ? 'LightMode' : 'DarkMode'}</Button> */}
-                                <button style={` ${{backgroundColor: blackbackground ?'white':'black' ,color: blackbackground?'white':'black'}}`} onClick={() => ChangeBackground()}>{blackbackground ? 'LightMode' : 'DarkMode'}</button>
+                                <Button className={`${styles.switchBtn}`} onClick={() => ChangeBackground()} variant={blackbackground ? styles.light_button : styles.dark_button }>{blackbackground ? 'LightMode' : 'DarkMode'}</Button>
+                                {/* <button className='p-2' style={{backgroundColor: blackbackground ?'white':'black' ,color: blackbackground?'black':'white'}} onClick={() => ChangeBackground()}>{blackbackground ? 'LightMode' : 'DarkMode'}</button> */}
                             </ul>
                         </div>
                     </nav>

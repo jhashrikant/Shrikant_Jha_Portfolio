@@ -52,21 +52,13 @@
 
 
 @media only screen and (max-width: 992px) {
-    /* .Project__container{
-        flex-direction: column;
-        
-    } */
-
-    .single_project_card{
-        /* width: 100%; */
-        /* align-items: center; */
-
-    }
+    
+    
     .projects__container{
         margin: 10px;
         width: auto;
         justify-content: center;
-        /* align-content: center; */
+        
     }
 
 

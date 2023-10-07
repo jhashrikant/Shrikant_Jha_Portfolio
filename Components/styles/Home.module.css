@@ -1,6 +1,4 @@
-/* .Home{
-    color: blue;
-} */
+
 
 .home{
     margin-top: 80px;
@@ -9,7 +7,7 @@
 .about__me {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    
 }
 
 
@@ -24,10 +22,15 @@
 
 
 
+.resume_color{
+    background-color: #6c757d;
+}
+
+
+
 
 @media only screen and (max-width: 992px){
     .about__me{
-        /* flex-direction: column-reverse; */
         align-items: center;
         margin-top: 30px;
     }
@@ -36,8 +39,6 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 25px;
-        /* object-position: center;
-        object-fit: contain; */
     }
 
 }
