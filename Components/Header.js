@@ -81,7 +81,7 @@ const Header = () => {
                                 {
                                     NAV_LINKS.map((navlink, index) => {
                                         return (
-                                            <li onClick={() => ScrollToSection(`#${navlink.id}`)} key={index} className={`${styles.cursor-pointer} font-sans ${styles.navItems}`}>{navlink.Label}</li>
+                                            <li onClick={() => ScrollToSection(`#${navlink.id}`)} key={index} className={`cursor-pointer font-sans ${styles.navItems}`}>{navlink.Label}</li>
                                         )
                                     })
                                 }
