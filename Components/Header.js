@@ -1,7 +1,7 @@
 'use client';
 import React, { useRef, useState } from 'react';
 import styles from './Header.module.css'
-import { Container } from 'reactstrap'
+import { Container } from 'reactstrap';
 import Button from 'react-bootstrap/Button';
 import Homesection from './sections/Homesection';
 import { GiHamburgerMenu } from 'react-icons/gi';
