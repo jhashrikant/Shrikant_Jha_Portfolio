@@ -51,7 +51,7 @@ const Homesection = ({ blackbackground }) => {
                                 </p>
 
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                                    <Button onClick={() => window.open('https://drive.google.com/file/d/1dw_dKAQCOTqSXTdmMuNg1fzdpZUxRy_y/view?usp=sharing', '_blank')} variant={styles.resume_color}>Resume</Button>
+                                    <Button onClick={() => window.open('https://drive.google.com/file/d/1dw_dKAQCOTqSXTdmMuNg1fzdpZUxRy_y/view?usp=sharing', '_blank')} variant={styles.secondary}>Resume</Button>
                                     {
                                         socialLinks.map((socialLink, index) => {
                                             return <button key={index} onClick={() => window.open(socialLink.Link, '_blank')} style={{ margin: '0 15px' }} title={socialLink.Title}>{socialLink.Icon}</button>

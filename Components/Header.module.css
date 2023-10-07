@@ -49,6 +49,9 @@
 /* .cursor-pointer{
     cursor: pointer !important;
 } */
+.cursor_pointer{
+    cursor: pointer;
+}
 
 
 
