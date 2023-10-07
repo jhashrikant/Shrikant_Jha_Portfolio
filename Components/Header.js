@@ -46,7 +46,7 @@ const Header = () => {
         console.log(idtoscroll)
         const targetelement = document.querySelector(idtoscroll);
         if (targetelement) {
-            targetelement.scrollIntoView({ behavior: 'smooth',block: 'start' });
+            targetelement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             navbarRef.current.classList.toggle(`${styles.active}`)
         }
     }
@@ -62,7 +62,7 @@ const Header = () => {
     }
 
     function OpenHamburgerMenu() {
-        navbarRef.current.classList.toggle(`${styles.active}`) 
+        navbarRef.current.classList.toggle(`${styles.active}`)
     }
 
 
@@ -79,13 +79,14 @@ const Header = () => {
                         <div ref={navbarRef} className={styles.navbar_links}>
                             <ul className={styles.list_items}>
                                 {
-                                    NAV_LINKS.map((navlink ,index)=>{
+                                    NAV_LINKS.map((navlink, index) => {
                                         return (
-                                            <li onClick={()=> ScrollToSection(`#${navlink.id}`)} key={index} className={`cursor-pointer font-sans ${styles.navItems}`}>{navlink.Label}</li>
+                                            <li onClick={() => ScrollToSection(`#${navlink.id}`)} key={index} className={`cursor-pointer font-sans ${styles.navItems}`}>{navlink.Label}</li>
                                         )
                                     })
                                 }
-                                <Button className={`${styles.switchBtn}`} onClick={() => ChangeBackground()} variant={blackbackground ? 'light' : 'dark'}>{blackbackground ? 'LightMode' : 'DarkMode'}</Button>
+                                {/* <Button className={`${styles.switchBtn}`} onClick={() => ChangeBackground()} variant={blackbackground ? 'light' : 'dark'}>{blackbackground ? 'LightMode' : 'DarkMode'}</Button> */}
+                                <button style={` ${{backgroundColor: blackbackground ?'white':'black' ,color: blackbackground?'white':'black'}}`} onClick={() => ChangeBackground()}>{blackbackground ? 'LightMode' : 'DarkMode'}</button>
                             </ul>
                         </div>
                     </nav>
