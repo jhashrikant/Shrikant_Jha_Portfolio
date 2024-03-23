@@ -42,8 +42,7 @@ const Homesection = ({ blackbackground }) => {
 							<h1>Hi ,my name is Shrikant Jha,</h1>
 							<h3>{displayText}</h3>
 							<p>Hi my name is Shrikant Jha , Im a Frontend developer
-								at Infosys <br />I do all things Coding<br />
-								I share my learnings on my Yotube videos 
+								at Infosys <br />I share my learnings on my Youtube videos<br />
 							</p>
 
 							<div className='flex items-center'>
