@@ -44,7 +44,7 @@ const Homesection = ({ blackbackground }) => {
 								at Infosys <br />I share my learnings on my Youtube videos<br />
 							</p>
 
-							<div className='flex items-center'>
+							<div className='flex items-center !important'>
 								<button
 									onClick={() => window.open('https://drive.google.com/file/d/1WiwxRZsMiu6kGrUMlZObBz0vWYTVJ-_5/view', '_blank')}
 									type="button"
