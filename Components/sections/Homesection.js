@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import { Col, Container, Row } from 'reactstrap';
 import profileImg from '../../images/profileImg.jpg'
 import Image from 'next/image'
-import Button from 'react-bootstrap/Button';
 import Projects from './Projects';
 import { socialLinks } from '../utils/data';
 
@@ -55,8 +54,8 @@ const Homesection = ({ blackbackground }) => {
 									Resume
 								</button>
 
-								{socialLinks.map((socialLink, index) => {
-									return <button key={index} onClick={() => window.open(socialLink.Link, '_blank')} className='my-0 mx-3' title={socialLink.Title}>{socialLink.Icon}</button>
+								{socialLinks.map(({ id, Title, Icon, Link }) => {
+									return <button key={id} onClick={() => window.open(Link, '_blank')} className='my-0 mx-3' title={Title}>{Icon}</button>
 								})}
 							</div>
 						</Col>

@@ -1,86 +1,83 @@
-.card{
-    padding: 10px;
-    margin: 10px;
+.card {
+	padding: 10px;
+	margin: 10px;
 }
 
-.projects__container{
-    display: flex;
-    align-items: center;
-    /* border: 1px solid black; */
-    border-radius: 5px;
-    padding: 10px;
+.projects__container {
+	display: flex;
+	align-items: center;
+	/* border: 1px solid black; */
+	border-radius: 5px;
+	padding: 10px;
 }
 
-.project__details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.project__details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.single_project_card{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.single_project_card {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
-.projectIcon{
-    /* color: #fff; */
-    
+.projectIcon {
+	/* color: #fff; */
+
 }
 
-.project__title{
-    font: bold;
-    font-size: 20px;
-    color: brown;
-}
-.project__stack{
-    color: grey;
-    font-size: 12px;
+.project__title {
+	font: bold;
+	font-size: 20px;
+	color: brown;
 }
 
-.Project__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.project__stack {
+	color: grey;
+	font-size: 12px;
 }
 
-.Projectsection_name{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+.Project__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Projectsection_name {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 
 @media only screen and (max-width: 992px) {
-    
-    
-    .projects__container{
-        margin: 10px;
-        width: auto;
-        justify-content: center;
-        
-    }
 
 
-    
+	.projects__container {
+		margin: 10px;
+		width: auto;
+		justify-content: center;
+	}
 }
 
 
-@media only screen and (max-width : 768px){
-    .Project__container{
-        flex-direction: column;
-        
-    }
+@media only screen and (max-width : 768px) {
+	.Project__container {
+		flex-direction: column;
 
-    .projects__container{
-        margin: 10px;
-        width: 330px;
-        justify-content: center;
-        /* align-content: center; */
-    }
+	}
 
-    .Projectsection_name{
-        align-items: center;
-        justify-content: center;
-    }
+	.projects__container {
+		margin: 10px;
+		width: 330px;
+		justify-content: center;
+		/* align-content: center; */
+	}
+
+	.Projectsection_name {
+		align-items: center;
+		justify-content: center;
+	}
 }

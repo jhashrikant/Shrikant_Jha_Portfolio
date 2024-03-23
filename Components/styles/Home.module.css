@@ -1,61 +1,53 @@
-
-
-.home{
-    margin-top: 80px;
+.home {
+	margin-top: 80px;
 }
 
 .about__me {
-    display: flex;
-    justify-content: space-between;
-    
+	display: flex;
+	justify-content: space-between;
+
 }
-
-
 
 .profileImg {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: flex;
-    justify-content: flex-end;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: flex;
+	justify-content: flex-end;
 }
 
-
-
-.secondary{
-    background-color: #6c757d;
+.secondary {
+	background-color: #6c757d;
 }
 
+@media only screen and (max-width: 992px) {
+	.about__me {
+		align-items: center;
+		margin-top: 30px;
+	}
 
-
-
-@media only screen and (max-width: 992px){
-    .about__me{
-        align-items: center;
-        margin-top: 30px;
-    }
-
-    .profileImg{
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 25px;
-    }
+	.profileImg {
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 25px;
+	}
 
 }
 
 @media only screen and (max-width : 768px) {
 
-    .about__me{
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 30px;
-    }
-    .profileImg{
-        max-width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 25px;
+	.about__me {
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-top: 30px;
+	}
 
-    }
-    
+	.profileImg {
+		max-width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 25px;
+
+	}
+
 }
