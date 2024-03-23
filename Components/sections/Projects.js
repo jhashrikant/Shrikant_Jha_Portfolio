@@ -1,5 +1,4 @@
-'use client';
-import React from 'react';
+
 import { Container } from 'reactstrap';
 import { projects } from '../utils/data';
 import Link from 'next/link';

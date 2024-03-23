@@ -43,7 +43,6 @@ const Header = () => {
 	]
 
 	function ScrollToSection(idtoscroll) {
-		console.log(idtoscroll)
 		const targetelement = document.querySelector(idtoscroll);
 		if (targetelement) {
 			targetelement.scrollIntoView({ behavior: 'smooth', block: 'start' });

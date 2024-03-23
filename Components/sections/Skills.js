@@ -1,6 +1,4 @@
 
-'use client'
-import React from 'react'
 import { Container } from 'reactstrap'
 import { TechnicalSkills } from '../utils/data'
 import styles from '../styles/skillItems.module.css'

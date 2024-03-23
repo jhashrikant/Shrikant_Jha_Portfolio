@@ -1,19 +1,15 @@
-'use client';
-import React from 'react'
+'use client'
 import { Container } from 'reactstrap';
 import { socialLinks } from './utils/data';
 
 
 const Footer = () => {
-
-
 	const currentYear = new Date().getFullYear();
-
 
 	return (
 		<section className='mt-20' id='footer'>
 			<Container>
-				<footer style={{ marginBottom: '60px' }} className="text-gray-600 body-font">
+				<footer className="text-gray-600 body-font mb-14">
 					<div className="container  mx-auto flex items-center sm:flex-row flex-col">
 						<a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
 							<div>&lt;/&gt;</div>
