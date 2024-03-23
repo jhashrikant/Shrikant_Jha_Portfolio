@@ -1,24 +1,34 @@
-import { Headphones ,Gamepad2 ,Shirt,Youtube,Github ,Linkedin,Twitter} from 'lucide-react';
-import {AiFillYoutube ,AiOutlineTwitter ,AiOutlineGithub,AiFillLinkedin} from 'react-icons/ai';
+import { Headphones, Gamepad2, Shirt, Youtube, Github, Linkedin, Twitter } from 'lucide-react';
+import { AiFillYoutube, AiOutlineTwitter, AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export const projects = [
     {
-        id:1,
-        projectTitle: 'Shopsavvy Ecommerce-website',
+        id: 1,
+        projectTitle: 'Shopsavvy Ecommerce-website-store',
         techStack: 'Nextjs13 , reactjs , Javascript(ES6+) , MongoDB , TailwindCSS',
         Icon: <Shirt />,
-        Github: 'https://github.com/jhashrikant/streetStyle-ecommerce-site',
+        Github: 'https://shopsavvy-store.vercel.app/',
         bgcolor: '#2a9d8f'
-    },
-    {
-        id:2,
-        projectTitle: 'Music player',
-        techStack: 'HTML5 ,CSS , JavaScript(ES6+)',
-        Icon: <Headphones />,
-        Github: 'https://github.com/jhashrikant/Music-player',
-        bgcolor: '#264653',
 
     },
+    {
+        id: 2,
+        projectTitle: 'Shopsavvy Ecommerce-Admin',
+        techStack: 'Nextjs13 , reactjs , Javascript(ES6+) , MongoDB , ShadcnUI',
+        Icon: <Shirt />,
+        Github: 'https://shopsavvy-admin.vercel.app/',
+        bgcolor: '#2a9d8f'
+
+    },
+    // {
+    //     id:2,
+    //     projectTitle: 'Music player',
+    //     techStack: 'HTML5 ,CSS , JavaScript(ES6+)',
+    //     Icon: <Headphones />,
+    //     Github: 'https://github.com/jhashrikant/Music-player',
+    //     bgcolor: '#264653',
+
+    // },
     {
         id: 3,
         projectTitle: 'Tic Tac Toe',
@@ -30,7 +40,7 @@ export const projects = [
 ]
 
 
-export const TechnicalSkills =[
+export const TechnicalSkills = [
     {
         id: 1,
         Title: 'HTML-CSS',
@@ -39,7 +49,7 @@ export const TechnicalSkills =[
 
     },
     {
-        id:2,
+        id: 2,
         Title: 'JavaScript(ES6+)',
         Progress: 80,
         src: ''
@@ -64,7 +74,7 @@ export const TechnicalSkills =[
         Title: 'NextJs13',
         Progress: 60,
         src: ''
-        
+
     },
     {
         id: 6,
@@ -77,7 +87,7 @@ export const TechnicalSkills =[
         id: 7,
         Title: 'NodeJs',
         Progress: 65,
-        src:''
+        src: ''
 
     },
     {
@@ -134,14 +144,14 @@ export const socialLinks = [
     }
 ]
 
-export const Experience= [
+export const Experience = [
     {
-        id:1,
+        id: 1,
         Title: 'Frontend Developer-Infosys',
-        Timeframe:' October 2021 - Present',
+        Timeframe: ' October 2021 - Present',
         Job_Description: 'working on exciting projects using JavaScript and ReactJS'
     },
-    
+
 ]
 
 
